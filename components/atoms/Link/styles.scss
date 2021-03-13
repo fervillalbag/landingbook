@@ -1,0 +1,17 @@
+
+.link {
+  display: inline-block;
+  color: $VeryDarkBlue;
+  font-size: 1.475rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  padding: 1rem;
+
+  &.vertical {
+    margin-right: 3rem;
+  }
+
+  &.horizontal {
+    margin-bottom: 3rem;
+  }
+}

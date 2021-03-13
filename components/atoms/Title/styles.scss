@@ -1,0 +1,11 @@
+
+.title {
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: $VeryDarkBlue;
+  margin: 2rem 0;
+
+  &.light {
+    color: $VeryLight;
+  }
+}

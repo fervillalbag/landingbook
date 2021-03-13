@@ -1,65 +1,50 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+
+import Blockquote from "../components/atoms/Blockquote"
+import Button from "../components/atoms/Button"
+import Description from "../components/atoms/Description"
+import Heading from "../components/atoms/Heading"
+import Image from "../components/atoms/Image"
+import Link from "../components/atoms/Link"
+import TabButton from "../components/atoms/TabButton"
+import Title from "../components/atoms/Title"
+import Brand from "../components/molecules/Brand/Brand"
+import Card from "../components/molecules/Card"
+import HeaderNav from "../components/molecules/HeaderNav/HeaderNav"
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div>
+      <Button>Button</Button>
+      <Image src="/logo-bookmark.svg" alt="Logo" />
+      <Link href="/">Features</Link>
+      <Heading>Heading</Heading>
+      <Description>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, sequi!</Description>
+      <Title>Title</Title>
+      <Blockquote>+35.000 already joined</Blockquote>
+      <TabButton active={true}>Simple Bookmarking</TabButton>
+      <section>
+        <Card
+          image="logo-chrome.svg"
+          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, sequi!"
+          href="/"
+          action="Add & Install Extension"
+        />
+      </section>
+      <Brand src="./vercel.svg" alt="Logo de vercel" />
+      <HeaderNav />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <style jsx>{`
+        div {
+          padding: 4rem;
+        }
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+        section {
+          margin: 2rem 0;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+      `}</style>
     </div>
+
   )
 }
