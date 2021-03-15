@@ -5,6 +5,10 @@
   color: $VeryDarkBlue;
   margin: 2rem 0;
 
+  @media (max-width: 768px) {
+    font-size: 2.25rem;
+  }
+
   &.light {
     color: $VeryLight;
   }

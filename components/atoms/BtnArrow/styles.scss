@@ -1,0 +1,26 @@
+
+.button-arrow {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 10rem;
+  border: none;
+  padding: 2rem 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background-color: $Transparent;
+  outline: none;
+  transition: all 300ms ease;
+  border-top: 1px solid hsl(0deg, 0%, 90%);
+  
+  > span:nth-child(1) {
+    display: block;
+    text-align: left;
+  }
+
+  > span:nth-child(2) {
+    display: block;
+    display: grid;
+    justify-content: end;
+  }
+}

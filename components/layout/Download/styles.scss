@@ -1,0 +1,52 @@
+
+.download {
+  padding: 6rem 0 18rem 0;
+
+  @media (max-width: 920px) {
+    padding: 6rem 0;
+  }
+
+  @media (max-width: 576px) {
+    padding: 3rem 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 30rem);
+    justify-content: center;
+    grid-column-gap: 4rem;
+
+    @media (max-width: 1070px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 920px) {
+      grid-template-columns: repeat(2, 30rem);
+      grid-row-gap: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+
+    > div:nth-child(2) {
+      transform: translateY(6rem);
+
+      @media (max-width: 920px) {
+        transform: translateY(0);
+      }
+    }
+
+    > div:nth-child(3) {
+      transform: translateY(10rem);
+
+      @media (max-width: 920px) {
+        transform: translateY(0);
+      }
+    }
+  }
+}

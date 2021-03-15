@@ -1,0 +1,19 @@
+
+.ask-tabs {
+  padding-bottom: 6rem;
+  width: 50%;
+  margin: 0 auto;
+
+  @media (max-width: 960px) {
+    width: 70%;
+  }
+
+  @media (max-width: 768px) {
+    width: 80%;
+    padding-bottom: 3rem;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,8 @@
+
+.feature-detail {
+  padding: 3rem;
+
+  @media (max-width: 1070px) {
+    padding: 0;
+  }
+}

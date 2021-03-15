@@ -13,14 +13,22 @@
 @import '../components/atoms/Description/styles.scss';
 @import '../components/atoms/Blockquote/styles.scss';
 @import '../components/atoms/TabButton/styles.scss';
+@import '../components/atoms/BtnArrow/styles.scss';
+
+// Molecules
 @import '../components/molecules/Card/styles.scss';
 @import '../components/molecules/Brand/styles.scss';
 @import '../components/molecules/HeaderNav/styles.scss';
-
-// Molecules
-
+@import '../components/molecules/HeroInfo/styles.scss';
+@import '../components/molecules/IntroInfo/styles.scss';
+@import '../components/molecules/FeatureDetail/styles.scss';
 
 // Organisms
+@import '../components/layout/Header/styles.scss';
+@import '../components/layout/Hero/styles.scss';
+@import '../components/layout/Features/styles.scss';
+@import '../components/layout/Download/styles.scss';
+@import '../components/layout/Ask/styles.scss';
 
-
-// Templates
+@import '../components/layout/FeatureTabs/styles.scss';
+@import '../components/layout/AskTabs/styles.scss';

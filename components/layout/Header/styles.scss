@@ -1,0 +1,13 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+}
+
+.menu {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
