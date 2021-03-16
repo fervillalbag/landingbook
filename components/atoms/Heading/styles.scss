@@ -2,6 +2,18 @@
 .heading {
   color: $VeryDarkBlue;
   font-weight: 500;
-  font-size: 4.6rem;
+  font-size: 4.2rem;
   margin: 2rem 0;
+
+  &.light {
+    color: $VeryLight;
+  }
+
+  &.sm {
+    font-size: 3.8rem;
+  }
+
+  &.m-0 {
+    margin: 0;
+  }
 }
