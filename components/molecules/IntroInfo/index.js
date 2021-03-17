@@ -1,2 +1,2 @@
 
-export { default } from './FeatureInfo'
+export { default } from './IntroInfo'

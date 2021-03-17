@@ -8,7 +8,7 @@ export default function HeaderNav() {
       <Link align="vertical" href="/">Features</Link>
       <Link align="vertical" href="/">Pricing</Link>
       <Link align="vertical" href="/">Contact</Link>
-      <Button color="danger" href="/">Login</Button>
+      <Button type="danger">Login</Button>
     </div>
   )
 }

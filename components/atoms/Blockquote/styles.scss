@@ -1,8 +1,15 @@
 
 .blockquote {
   text-transform: uppercase;
-  color: $VeryDarkBlue;
   font-size: 1.275rem;
   letter-spacing: 0.275rem;
   font-weight: 500;
+
+  &.default {
+    color: $VeryDarkBlue;
+  }
+
+  &.light {
+    color: $VeryLight;
+  }
 }

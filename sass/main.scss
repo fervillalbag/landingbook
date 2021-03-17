@@ -9,8 +9,7 @@
 @import '../components/atoms/Image/styles.scss';
 @import '../components/atoms/Link/styles.scss';
 @import '../components/atoms/Heading/styles.scss';
-@import '../components/atoms/Title/styles.scss';
-@import '../components/atoms/Description/styles.scss';
+@import '../components/atoms/Paragraph/styles.scss';
 @import '../components/atoms/Blockquote/styles.scss';
 @import '../components/atoms/TabButton/styles.scss';
 @import '../components/atoms/BtnArrow/styles.scss';
@@ -24,7 +23,7 @@
 @import '../components/molecules/IntroInfo/styles.scss';
 @import '../components/molecules/FeatureDetail/styles.scss';
 
-// Organisms
+// Layout
 @import '../components/layout/Header/styles.scss';
 @import '../components/layout/Hero/styles.scss';
 @import '../components/layout/Features/styles.scss';
@@ -33,3 +32,5 @@
 @import '../components/layout/FeatureTabs/styles.scss';
 @import '../components/layout/AskTabs/styles.scss';
 @import '../components/layout/Footer/styles.scss';
+@import '../components/layout/FooterHeader/styles.scss';
+@import '../components/layout/FooterNav/styles.scss';

@@ -2,12 +2,10 @@
 .button {
   display: inline-block;
   text-align: center;
-  background-color: $SoftBlue;
   border: none;
   outline: none;
   padding: 1.5rem 2.5rem;
   font-weight: 500;
-  color: $VeryLight;
   font-size: 1.475rem;
   cursor: pointer;
   border-radius: 0.375rem;
@@ -16,7 +14,12 @@
   -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.15);
   box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.15);
 
-  &.block {
+  &.default {
+    background-color: $SoftBlue;
+    color: $VeryLight;
+  }
+  
+  &.full {
     display: block;
     width: 100%;
   }

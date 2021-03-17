@@ -1,16 +1,34 @@
 
 .heading {
-  color: $VeryDarkBlue;
   font-weight: 500;
-  font-size: 4.2rem;
   margin: 2rem 0;
+
+  &.default {
+    color: $VeryDarkBlue;
+  }
 
   &.light {
     color: $VeryLight;
   }
 
-  &.sm {
+  &.lg {
+    font-size: 4.2rem;
+
+    @media (max-width: 768px) {
+      font-size: 3.8rem;
+    }
+  }
+
+  &.md {
     font-size: 3.8rem;
+
+    @media (max-width: 768px) {
+      font-size: 2.25rem;
+    }
+  }
+
+  &.sm {
+    font-size: 2.8rem;
   }
 
   &.m-0 {

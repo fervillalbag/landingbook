@@ -1,0 +1,38 @@
+
+.footer {
+  &__nav {
+    background-color: $VeryDarkBlue;
+    padding: 1.5rem 0;
+
+    @media (max-width: 576px) {
+      padding: 3rem 0;
+    }
+
+    > .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      row-gap: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+}

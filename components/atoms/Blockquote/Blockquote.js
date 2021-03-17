@@ -1,7 +1,7 @@
 
-export default function Blockquote({ children }) {
+export default function Blockquote({ children, type }) {
   return (
-    <span className="blockquote">
+    <span className={`blockquote ${type}`}>
       {children}
     </span>
   )

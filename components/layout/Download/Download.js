@@ -1,5 +1,4 @@
 
-import React from 'react'
 import Card from '../../molecules/Card/Card'
 import IntroInfo from '../../molecules/IntroInfo'
 import { data } from '../../../data/download'
