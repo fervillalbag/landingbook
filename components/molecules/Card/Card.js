@@ -1,4 +1,5 @@
 
+import PropTypes from 'prop-types'
 import Button from "../../atoms/Button"
 import Paragraph from "../../atoms/Paragraph"
 import Heading from "../../atoms/Heading"
@@ -13,4 +14,12 @@ export default function Card({ title, image, description, href, action }) {
       <Button display="block" href={href}>{action}</Button>
     </div>
   )
+}
+
+Card.propTypes = {
+  title: PropTypes.string,
+  image: PropTypes.string,
+  description: PropTypes.string,
+  href: PropTypes.string,
+  action: PropTypes.string,
 }

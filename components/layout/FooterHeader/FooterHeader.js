@@ -13,7 +13,7 @@ export default function FooterHeader() {
         <Heading size="md" type="light" margin="m-0">Stay up-to-date with what we’re doing</Heading>
       </header>
       <div className="footer__form">
-        <Input />
+        <Input type="text" placeholder="Enter your email address" />
         <Button width="full" type="danger">Contact Us</Button>
       </div>
     </Fragment>

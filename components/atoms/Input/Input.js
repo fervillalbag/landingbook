@@ -1,10 +1,22 @@
 
-export default function Input() {
+import PropTypes from 'prop-types'
+
+export default function Input({ type, placeholder }) {
   return (
     <input
-      type="text"
-      placeholder=""
+      type={type}
+      placeholder={placeholder}
       className="input"
     />
   )
+}
+
+Input.defaultProps = {
+  type: 'text',
+  placeholder: ''
+}
+
+Input.propTypes = {
+  type: PropTypes.string.isRequired,
+  placeholder: PropTypes.string
 }

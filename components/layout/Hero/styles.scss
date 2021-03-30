@@ -5,7 +5,6 @@
   align-items: center;
   grid-column-gap: 5rem;
   padding: 6rem 0;
-  position: relative;
 
   @media (max-width: 992px) {
     grid-template-columns: 1fr;
@@ -17,12 +16,17 @@
   }
 
   .media {
+    @media (max-width: 576px) {
+      order: -1;
+      position: relative;
+    }
+
     &:before {
       content: '';
       position: absolute;
-      bottom: 2rem;
+      bottom: 8rem;
       right: 0;
-      transform: translateX(960rem);
+      transform: translateX(950rem);
       display: block;
       border-radius: 20rem;
       width: 1000rem;
@@ -30,14 +34,21 @@
       z-index: -1;
       background-color: $SoftBlue;
 
+      @media (max-width: 1125px) {
+        height: 20rem;
+        bottom: 10rem;
+      }
+
       @media (max-width: 992px) {
         height: 26rem;
-        transform: translateX(970rem);
+        transform: translateX(940rem);
+        bottom: -16rem;
       }
 
       @media (max-width: 576px) {
         height: 16rem;
         transform: translateX(970rem);
+        bottom: 0;
       }
     }
   }

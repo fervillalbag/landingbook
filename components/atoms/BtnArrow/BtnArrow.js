@@ -1,5 +1,6 @@
 
 import Image from '../../atoms/Image'
+import PropTypes from 'prop-types'
 
 export default function BtnArrow({ text, icon }) {
   return (
@@ -10,4 +11,9 @@ export default function BtnArrow({ text, icon }) {
       </span>
     </button>
   )
+}
+
+BtnArrow.propTypes = {
+  text: PropTypes.string,
+  icon: PropTypes.string.isRequired,
 }

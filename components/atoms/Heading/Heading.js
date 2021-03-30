@@ -16,6 +16,7 @@ Heading.defaultProps = {
 
 Heading.protoType = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.oneOf['default', 'light'],
-  size: PropTypes.oneOf['lg', 'md', 'sm'],
+  type: PropTypes.oneOf(['default', 'light']),
+  size: PropTypes.oneOf(['lg', 'md', 'sm']),
+  margin: PropTypes.string
 }

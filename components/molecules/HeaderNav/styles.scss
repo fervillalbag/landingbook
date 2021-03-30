@@ -2,4 +2,47 @@
 .header-nav {
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    transform: translateY(1000px);
+    
+    flex-direction: column;
+    justify-content: center;
+
+    &.active {
+      transform: translateY(0);
+    }
+
+    a {
+      margin-right: 0 !important;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+  }
+
+  &__close {
+    display: none;
+    
+    @media (max-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 1.8rem;
+      right: 2rem;
+    }
+  }
+}
+
+.bars {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 }

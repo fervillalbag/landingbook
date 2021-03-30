@@ -1,10 +1,10 @@
 
 import PropTypes from 'prop-types'
 
-export default function Button({ children, type, width, handleClick }) {
+export default function Button({ children, type, width, onClick }) {
   return (
     <button
-      onClick={handleClick}
+      onClick={onClick}
       className={`button ${type} ${width}`}
     >
       {children}
@@ -18,7 +18,7 @@ Button.defaultProps = {
 
 Button.protoType = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.oneOf['default', 'light', 'danger'],
+  color: PropTypes.oneOf(['default', 'light', 'danger']),
   display: PropTypes.node.isRequired,
-  handleClick: PropTypes.func
+  onClick: PropTypes.func
 }

@@ -10,9 +10,9 @@ export default function FooterNav() {
         <div className="footer__brand">
           <Brand src="/logo-bookmark-white.svg" alt="Logo de la Empresa" />
           <div className="footer__menu">
-            <Link color="light" href="/">Features</Link>
-            <Link color="light" href="/">Pricing</Link>
-            <Link color="light" href="/">Contact</Link>
+            <Link type="light" href="/">Features</Link>
+            <Link type="light" href="/">Pricing</Link>
+            <Link type="light" href="/">Contact</Link>
           </div>
         </div>
         <div className="footer__social">
