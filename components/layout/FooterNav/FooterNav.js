@@ -1,4 +1,5 @@
 
+import PropTypes from 'prop-types'
 import Link from '../../atoms/Link'
 import Brand from '../../molecules/Brand'
 import Image from '../../atoms/Image'
@@ -26,4 +27,10 @@ export default function FooterNav() {
       </div>
     </nav>
   )
+}
+
+FooterNav.propTypes = {
+  Brand: PropTypes.elementType,
+  Link: PropTypes.elementType,
+  Image: PropTypes.elementType,
 }

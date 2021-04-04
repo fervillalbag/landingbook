@@ -1,4 +1,5 @@
 
+import PropTypes from 'prop-types'
 import Image from '../../atoms/Image'
 import HeroInfo from '../../molecules/HeroInfo'
 
@@ -7,8 +8,7 @@ export default function Hero() {
     <div className="hero container">
       <HeroInfo
         heading="A Simple Bookmark Manager"
-        description="A clean and simple interface to organize your favourite websites. Open a new
-  browser tab and see your sites load instantly. Try it for free."
+        description="A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free."
         chrome="Get it on Chrome"
         firefox="Get it on Chrome"
       />
@@ -17,4 +17,9 @@ export default function Hero() {
       </div>
     </div>
   )
+}
+
+Hero.propTypes = {
+  HeroInfo: PropTypes.elementType,
+  Image: PropTypes.elementType,
 }

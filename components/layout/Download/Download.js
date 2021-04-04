@@ -1,4 +1,5 @@
 
+import PropTypes from 'prop-types'
 import Card from '../../molecules/Card/Card'
 import IntroInfo from '../../molecules/IntroInfo'
 import { data } from '../../../data/download'
@@ -25,4 +26,9 @@ export default function Download() {
       </div>
     </div>
   )
+}
+
+Download.propTypes = {
+  IntroInfo: PropTypes.elementType,
+  Card: PropTypes.elementType,
 }

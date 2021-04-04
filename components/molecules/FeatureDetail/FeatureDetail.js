@@ -1,7 +1,8 @@
 
-import Paragraph from "../../atoms/Paragraph";
-import Button from "../../atoms/Button";
-import Heading from "../../atoms/Heading";
+import PropTypes from 'prop-types'
+import Paragraph from '../../atoms/Paragraph'
+import Button from '../../atoms/Button'
+import Heading from '../../atoms/Heading'
 
 export default function FeatureDetail({ title, description, action }) {
   return (
@@ -11,4 +12,10 @@ export default function FeatureDetail({ title, description, action }) {
       <Button>{action}</Button>
     </div>
   )
+}
+
+FeatureDetail.propTypes = {
+  Heading: PropTypes.elementType,
+  Paragraph: PropTypes.elementType,
+  Button: PropTypes.elementType,
 }

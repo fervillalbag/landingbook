@@ -1,13 +1,21 @@
 
 import PropTypes from 'prop-types'
+import Image from '../Image'
 
-export default function Button({ children, type, width, onClick }) {
+export default function Button({ children, type, width, onClick, icon, active }) {
   return (
     <button
       onClick={onClick}
-      className={`button ${type} ${width}`}
+      className={`button ${type} ${width} ${active && 'active'}`}
     >
-      {children}
+      <span>
+        {children}
+      </span>
+      {icon && (
+        <span>
+          <Image src={icon} alt={`${children} Icon`} />
+        </span>
+      )}
     </button>
   )
 }
@@ -20,5 +28,6 @@ Button.protoType = {
   children: PropTypes.node.isRequired,
   color: PropTypes.oneOf(['default', 'light', 'danger']),
   display: PropTypes.node.isRequired,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  type: PropTypes.string,
 }

@@ -1,7 +1,8 @@
 
-import { useState } from "react";
-import TabButton from "../../atoms/TabButton";
-import TabFeatureBody from "../TabFeatureBody";
+import { useState } from "react"
+import PropTypes from 'prop-types'
+import TabFeatureBody from "../TabFeatureBody"
+import Button from "../../atoms/Button"
 
 export default function FeatureTabs() {
 
@@ -11,7 +12,7 @@ export default function FeatureTabs() {
     setIdActive(id)
 
     if (innerWidth < 768) {
-      scrollTo(0, 1249)
+      scrollTo(0, 1270)
     }
   }
 
@@ -19,26 +20,29 @@ export default function FeatureTabs() {
     <div className="feature-tabs">
       <div className="nav">
 
-        <TabButton
+        <Button
+          type="tab"
           onClick={() => handleClick(1)}
           active={idActive === 1 && true}
         >
           Simple Bookmarking
-        </TabButton>
+        </Button>
 
-        <TabButton
+        <Button
+          type="tab"
           onClick={() => handleClick(2)}
           active={idActive === 2 && true}
         >
           Speedy Searching
-        </TabButton>
+        </Button>
 
-        <TabButton
+        <Button
+          type="tab"
           onClick={() => handleClick(3)}
           active={idActive === 3 && true}
         >
           Easy Sharing
-        </TabButton>
+        </Button>
       </div>
 
       <div className="body">
@@ -67,4 +71,10 @@ export default function FeatureTabs() {
       </div>
     </div>
   )
+}
+
+FeatureTabs.propTypes = {
+  Button: PropTypes.elementType,
+  TabFeatureBody: PropTypes.elementType,
+  handleClick: PropTypes.func
 }

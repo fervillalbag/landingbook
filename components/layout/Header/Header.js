@@ -1,4 +1,5 @@
 
+import PropTypes from 'prop-types'
 import Brand from '../../molecules/Brand'
 import HeaderNav from '../../molecules/HeaderNav'
 
@@ -11,4 +12,9 @@ export default function Header() {
       </div>
     </header>
   )
+}
+
+Header.propTypes = {
+  Brand: PropTypes.elementType,
+  HeaderNav: PropTypes.elementType,
 }

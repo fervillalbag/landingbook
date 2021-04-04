@@ -1,5 +1,6 @@
 
 import { Fragment } from 'react'
+import PropTypes from 'prop-types'
 import Blockquote from '../../atoms/Blockquote'
 import Button from '../../atoms/Button'
 import Input from '../../atoms/Input'
@@ -18,4 +19,11 @@ export default function FooterHeader() {
       </div>
     </Fragment>
   )
+}
+
+FooterHeader.propTypes = {
+  Blockquote: PropTypes.elementType,
+  Heading: PropTypes.elementType,
+  Input: PropTypes.elementType,
+  Button: PropTypes.elementType,
 }

@@ -1,4 +1,5 @@
 
+import PropTypes from 'prop-types'
 import AskTabs from '../AskTabs'
 import IntroInfo from '../../molecules/IntroInfo'
 import Button from '../../atoms/Button'
@@ -18,4 +19,10 @@ export default function Ask() {
       </div>
     </div>
   )
+}
+
+Ask.propTypes = {
+  IntroInfo: PropTypes.elementType,
+  AskTabs: PropTypes.elementType,
+  Button: PropTypes.elementType,
 }

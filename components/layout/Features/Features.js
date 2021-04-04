@@ -1,4 +1,5 @@
 
+import PropTypes from 'prop-types'
 import FeatureTabs from "../../layout/FeatureTabs"
 import IntroInfo from "../../molecules/IntroInfo"
 
@@ -12,4 +13,9 @@ export default function Features() {
       <FeatureTabs />
     </div>
   )
+}
+
+Features.propTypes = {
+  IntroInfo: PropTypes.elementType,
+  FeatureTabs: PropTypes.elementType,
 }

@@ -16,16 +16,16 @@
   }
 
   .media {
+    position: relative;
     @media (max-width: 576px) {
       order: -1;
-      position: relative;
     }
 
     &:before {
       content: '';
       position: absolute;
-      bottom: 8rem;
-      right: 0;
+      bottom: -4rem;
+      right: -2rem;
       transform: translateX(950rem);
       display: block;
       border-radius: 20rem;
@@ -35,19 +35,20 @@
       background-color: $SoftBlue;
 
       @media (max-width: 1125px) {
-        height: 20rem;
-        bottom: 10rem;
+        height: 26rem;
+        right: -10rem;
       }
 
       @media (max-width: 992px) {
-        height: 26rem;
+        right: 0;
+        height: 32rem;
+        bottom: 0;
         transform: translateX(940rem);
-        bottom: -16rem;
       }
 
       @media (max-width: 576px) {
-        height: 16rem;
-        transform: translateX(970rem);
+        height: 18rem;
+        transform: translateX(972rem);
         bottom: 0;
       }
     }

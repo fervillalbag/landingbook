@@ -1,5 +1,6 @@
 
 import { Fragment, useState } from 'react'
+import PropTypes from 'prop-types'
 import Link from '../../atoms/Link'
 import Button from '../../atoms/Button'
 import Image from '../../atoms/Image'
@@ -22,7 +23,7 @@ export default function HeaderNav() {
 
         <div className="header-nav__close">
           <Button
-            type="light"
+            type="burguer"
             onClick={handleShow}
           >
             <Image
@@ -35,7 +36,7 @@ export default function HeaderNav() {
       </div>
       <div className="bars">
         <Button
-          type="light"
+          type="burguer"
           onClick={handleShow}
         >
           <Image
@@ -46,4 +47,11 @@ export default function HeaderNav() {
       </div>
     </Fragment>
   )
+}
+
+HeaderNav.propTypes = {
+  Link: PropTypes.elementType,
+  Button: PropTypes.elementType,
+  Image: PropTypes.elementType,
+  handleShow: PropTypes.func,
 }
