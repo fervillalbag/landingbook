@@ -12,7 +12,7 @@ export default function FeatureTabs() {
     setIdActive(id)
 
     if (innerWidth < 768) {
-      scrollTo(0, 1270)
+      scrollTo(0, 1290)
     }
   }
 
